@@ -9,7 +9,16 @@ li {
 
 h1 {
 	border-style: solid;
+	font-family: arial;
 	padding: 6px;
+}
+
+h2 {
+	font-family: arial;
+}
+
+.header {
+	
 }
 
 footer {
@@ -20,4 +29,20 @@ footer {
 #form {
 	background-image: url("clouds.jpg");
 	padding: 8px;	
+}
+
+a:link {
+    color: #339999;
+}
+
+a:visited {
+    color: #99ccff;
+}
+
+a:hover {
+    color: #99ff99;
+}
+
+a:active {
+    color: #00ff33;
 }
