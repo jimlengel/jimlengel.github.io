@@ -1,3 +1,23 @@
 body {
 	background:#00ffff;
+	font-family: verdana;
+}
+
+li {
+	padding-left: 16px;
+}
+
+h1 {
+	border-style: solid;
+	padding: 6px;
+}
+
+footer {
+	padding: 12px;
+	text-align: center;
+}
+
+#form {
+	background-image: url("clouds.jpg");
+	padding: 8px;	
 }
