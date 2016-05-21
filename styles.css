@@ -3,8 +3,13 @@ body {
 	font-family: verdana;
 }
 
+p {
+  font-size: 16px;
+}
 li {
-	padding-left: 16px;
+	padding-left: 18px;
+  padding-bottom: 8px;
+  font-size: 16px;
 }
 
 h1 {
@@ -18,7 +23,7 @@ h2 {
 }
 
 .header {
-	
+
 }
 
 footer {
@@ -28,7 +33,7 @@ footer {
 
 #form {
 	background-image: url("clouds.jpg");
-	padding: 8px;	
+	padding: 8px;
 }
 
 a:link {
