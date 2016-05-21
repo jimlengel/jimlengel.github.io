@@ -1,3 +1,9 @@
+@media (max-width: 600px) {
+  #page-title {
+    display: none;
+  }
+}
+
 body {
 	background:#00ffff;
 	font-family: verdana;
@@ -6,6 +12,7 @@ body {
 p {
   font-size: 16px;
 }
+
 li {
 	padding-left: 18px;
   padding-bottom: 8px;
