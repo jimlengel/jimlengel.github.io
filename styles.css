@@ -1,60 +1,144 @@
-@media (max-width: 600px) {
-  #page-title {
-    display: none;
-  }
-}
-
 body {
-	background:#00ffff;
-	font-family: verdana;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f1f1f1;
+  margin: 0em;
+  padding: 0em;
 }
 
-p {
-  font-size: 16px;
+strong {
+  font-weight: 900;
+  font-size: 1.4em;
 }
 
-li {
-	padding-left: 18px;
-  padding-bottom: 8px;
-  font-size: 16px;
+.container {
+  max-width: 80%;
+}
+
+.top-wrap {
+  background-color: #25ccdb;
+  padding: 10px;
+}
+
+.name {
+  font-size: 4em;  
+}
+
+.contact {
+  font-size: 1.1em;
+}
+
+.subheading {
+  background-color: #1d727a;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 800;
+  padding: 10px;
+  clear: left;
+}
+
+.bodytext {
+  padding: 10px;
+  margin: auto;
+  
+}
+
+.skills {
+  font-size: 1.4em;
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: #25ccdb;
+}
+
+.third {
+  float: left; 
+  width: 30%;
+  min-width: 200px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 h1 {
-	border-style: solid;
-	font-family: arial;
-	padding: 6px;
+
 }
 
 h2 {
-	font-family: arial;
+  font-size: 1.5em;
+  font-weight: 800;
 }
 
-.header {
-
+h3 {
+  font-size: 1.1em;
+  font-weight: 800;
 }
 
-footer {
-	padding: 12px;
-	text-align: center;
+h4 {
+  font-size: 1.0em;
+  font-weight: 800;
 }
 
-#form {
-	background-image: url("clouds.jpg");
-	padding: 8px;
+ul {
+  margin-left: 0em;
+  margin-top: .1em;
+  margin-bottom: .9em;
 }
 
 a:link {
-    color: #339999;
+  text-decoration: none;
+  color: #000;
 }
 
 a:visited {
-    color: #99ccff;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #99ff99;
+  text-decoration: underline;
 }
 
 a:active {
-    color: #00ff33;
+  text-decoration: underline;
 }
+
+@media only screen and (max-device-width: 422px) {
+  .container {
+    margin: none;
+    padding: none;
+    max-width: 100%;
+  }
+
+  .name {
+    font-size: 8em;  
+  }
+
+  .third {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .skills {
+    padding-left: 22px;
+  }
+
+  .bodytext {
+    padding: 20px;
+  }
+
+  strong {
+    font-weight: 900;
+    font-size: 2.4em;
+  }
+
+  ul {
+  margin-bottom: 50px;
+  }
+
+  .top-wrap {
+    padding: 30px;
+  }
+
+  .skills {
+    width: 80%;
+    font-size: 2.3em;
+    padding-left: 10px;
+  }
