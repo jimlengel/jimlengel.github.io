@@ -6,6 +6,26 @@ body {
   padding: 0em;
 }
 
+a[name] {
+  padding-top: 130px;
+  margin-top: -130px;
+  display: block;
+}
+
+.nav {
+  margin-right: 22px;
+  float: right;
+  font-size: 1.4em;
+}
+
+.space {
+  height: 120px;
+}
+
+.space2 {
+  height: 500px;
+}
+
 strong {
   font-weight: 900;
   font-size: 1.4em;
@@ -16,6 +36,9 @@ strong {
 }
 
 .top-wrap {
+  clear: both;
+  position: fixed;
+  width: 100%;
   background-color: #25ccdb;
   padding: 10px;
 }
@@ -89,6 +112,7 @@ a:link {
 }
 
 a:visited {
+  color: #000;
   text-decoration: none;
 }
 
@@ -143,3 +167,30 @@ a:active {
     font-size: 2.3em;
     padding-left: 10px;
   }
+
+  .contact {
+    font-size: 3em;
+  }
+
+  a[name] {
+    padding-top: 324px;
+    margin-top: -324px;
+    display: block;
+  }
+
+  .nav {
+    margin-right: 62px;
+    float: left;
+    font-size: 2.6em;
+  }
+
+  .space {
+    height: 318px;
+  }
+
+
+  .space2 {
+    height: 800px;
+  }
+
+}
