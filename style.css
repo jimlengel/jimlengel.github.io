@@ -2,8 +2,9 @@
 body {
   /*font-family: 'Rammetto One', cursive;*/
   /*font-family: 'Oswald', sans-serif;*/
-  font-family: 'Fjalla One', sans-serif;
+  /*font-family: 'Fjalla One', sans-serif;*/
   /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Lato', sans-serif;
   background-color: #f1f1f1;
   margin: 0em;
   padding: 0em;
@@ -21,6 +22,7 @@ a[name] {
 }
 
 .nav {
+  font-family: 'Fjalla One', sans-serif;
   margin-right: 28px;
   float: right;
   font-size: 1.4em;
@@ -56,14 +58,17 @@ strong {
 }
 
 .name {
-  font-size: 4em;  
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 4.2em;  
 }
 
 .contact {
+  font-family: 'Fjalla One', sans-serif;
   font-size: 1.1em;
 }
 
 .subheading {
+  
   background-color: #1d727a;
   color: #fff;
   font-size: 1.5em;
