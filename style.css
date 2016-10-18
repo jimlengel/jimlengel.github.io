@@ -16,8 +16,8 @@ body {
 }
 
 a[name] {
-  padding-top: 139px;
-  margin-top: -139px;
+  padding-top: 152px;
+  margin-top: -152px;
   display: block;
 }
 
@@ -29,7 +29,7 @@ a[name] {
 }
 
 .space {
-  height: 130px;
+  height: 144px;
 }
 
 .space2 {
@@ -68,7 +68,7 @@ strong {
 }
 
 .subheading {
-  
+
   background-color: #1d727a;
   color: #fff;
   font-size: 1.5em;
@@ -197,13 +197,14 @@ a:active {
   }
 
   .nav {
+    visibility: hidden;
     margin-right: 62px;
     float: left;
     font-size: 2.6em;
   }
 
   .space {
-    height: 334px;
+    height: 395px;
   }
 
 
