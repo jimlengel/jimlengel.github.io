@@ -91,6 +91,11 @@ strong {
   border-radius: 7px;
 }
 
+.logos {
+  float:left;
+  margin-right: 15px;
+}
+
 .third {
   float: left; 
   width: 25%;
@@ -204,12 +209,18 @@ a:active {
   }
 
   .space {
-    height: 395px;
+    height: 456px;
   }
 
 
   .space2 {
     height: 800px;
   }
+
+  .logos {
+    clear: left;
+    margin-right: 15px;
+  }
+
 
 }
