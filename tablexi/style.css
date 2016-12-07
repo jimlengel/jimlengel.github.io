@@ -7,8 +7,13 @@ body {
   padding: 0em;
 }
 
-.header {
+#header {
   background-color: #6e4961;
   color: #fff;
 }
 
+#marketing {
+  background-image: url(images/produce.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
