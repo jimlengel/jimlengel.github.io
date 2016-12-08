@@ -1,3 +1,4 @@
+/* table xi */
 
 body {
   font-family: 'Cherry Swash', cursive;
@@ -7,13 +8,36 @@ body {
   padding: 0em;
 }
 
-#header {
+
+.align-content {
+  vertical-align: middle;
+}
+
+#banner {
   background-color: #6e4961;
   color: #fff;
+  height: 90px;
+}
+
+#logo {
+  color: red;
+}
+
+#menu {
+  height: 50px;
 }
 
 #marketing {
+  height: 360px;
   background-image: url(images/produce.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#bullet_points {
+  height: 115px;
+}
+
+#footer {
+  height: 243px;
 }
