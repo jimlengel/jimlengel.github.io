@@ -1,22 +1,35 @@
 /* table xi */
 
 body {
-  font-family: 'Cherry Swash', cursive;
+  /*font-family: 'Cherry Swash', cursive;*/
   font-family: 'Montserrat', sans-serif;
   background-color: #f1f1f1;
   margin: 0em;
   padding: 0em;
 }
 
-
-.align-content {
-  vertical-align: middle;
+.center {
+  text-align: center;
 }
+
 
 #banner {
   background-color: #6e4961;
   color: #fff;
   height: 90px;
+
+}
+
+#menu-list {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #3C3D41;
+  font-size: 1rem;
+}
+
+.align-content {
+  color: black;
+  margin: auto;
 }
 
 #logo {
@@ -24,6 +37,8 @@ body {
 }
 
 #menu {
+  width: 100%;
+  background-color: yellow;
   height: 50px;
 }
 
@@ -34,8 +49,47 @@ body {
   background-size: cover;
 }
 
-#bullet_points {
+#marketing-text {
+  color: #fff;
+  font-size: 3em;
+}
+
+#marketing-form input[type=text] {
+  width: 200px;
+  padding: .5rem;
+  margin: .1rem;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 6px;
+}
+
+#marketing-form input[type=submit] {
+  width: 105px;
+  padding: .5rem;
+  margin: .1rem;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #8fd295;
+  text-transform: uppercase;
+
+}
+
+
+
+#bullet-points {
   height: 115px;
+}
+
+#products-text {
+  color: #3C3D41;
+  text-transform: uppercase;
+}
+
+#testimonial {
+  font-size: 1.4rem;
+  color: #4A4A4A;
 }
 
 #footer {
