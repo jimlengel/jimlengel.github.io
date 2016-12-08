@@ -3,48 +3,95 @@
 body {
   /*font-family: 'Cherry Swash', cursive;*/
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   background-color: #f1f1f1;
   margin: 0em;
   padding: 0em;
 }
 
-.center {
+
+.center-text {
   text-align: center;
 }
 
+.center-container {
+  margin: auto;
+  max-width: 768px;
+}
 
 #banner {
   background-color: #6e4961;
   color: #fff;
   height: 90px;
-
-}
-
-#menu-list {
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  color: #3C3D41;
-  font-size: 1rem;
-}
-
-.align-content {
-  color: black;
-  margin: auto;
 }
 
 #logo {
-  color: red;
+  color: #fff;
+  float: left;
+  font-size: 2em;
+  line-height: 90px;
 }
+
+.bold {
+  font-weight: 700;
+}
+
+#navcontainer {
+  float: right;
+  line-height: 90px;
+
+}
+
+#navcontainer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+#navcontainer ul li { 
+  display: inline; 
+}
+
+#navcontainer ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: .2em 1em;
+  color: #fff;
+}
+
+/*#navcontainer ul li a:hover {
+}
+*/
+
+
+
 
 #menu {
   width: 100%;
-  background-color: yellow;
   height: 50px;
+}
+
+#menu-list {
+  margin: auto;
+  max-width: 768px;
+  line-height: 50px;
+}
+
+.menu-item {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #3C3D41;
+  font-size: .95rem;
+  float:left; 
+  width:25%;
 }
 
 #marketing {
   height: 360px;
-  background-image: url(images/produce.jpg);
+    /*max-width: 768px;*/
+  margin: auto;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/produce.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -52,6 +99,8 @@ body {
 #marketing-text {
   color: #fff;
   font-size: 3em;
+  margin: auto;
+  max-width: 768px;
 }
 
 #marketing-form input[type=text] {
@@ -76,10 +125,16 @@ body {
 
 }
 
-
-
 #bullet-points {
+  width: 90%;
+  max-width: 768px;
   height: 115px;
+  margin: auto;
+}
+
+.bullet {
+  float:left; 
+  width:33%;
 }
 
 #products-text {
