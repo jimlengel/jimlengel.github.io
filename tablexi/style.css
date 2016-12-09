@@ -1,62 +1,133 @@
 /* table xi */
 
+/* - - - Global - - - */
+
 body {
   /*font-family: 'Cherry Swash', cursive;*/
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   background-color: #f1f1f1;
   margin: 0em;
   padding: 0em;
 }
 
-.center {
+a {
+  text-decoration: none;
+}
+
+
+/* get rid of this? */
+.center-text {
   text-align: center;
 }
 
 
+/* - - - Banner - - - */
+
 #banner {
   background-color: #6e4961;
-  color: #fff;
   height: 90px;
-
 }
 
-#menu-list {
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  color: #3C3D41;
-  font-size: 1rem;
-}
-
-.align-content {
-  color: black;
+#banner-container {
   margin: auto;
+  /*max-width: 768px;*/
+  width: 98%;
 }
 
-#logo {
-  color: red;
+#logo-container {
+  float: left;
+  margin-top: 16px;
 }
+
+#navcontainer {
+  float: right;
+}
+
+#navcontainer ul li { 
+  display: inline; 
+}
+
+#navcontainer ul li a {
+  font-size: .9rem;
+  text-transform: uppercase;
+  padding: 0 20px;
+  color: #fff;
+}
+
+#navcontainer .nav-text {
+  padding-right: 10px;
+}
+
+.navbutton {
+  background-color: #ffc306;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  padding: 12px 28px;
+  margin: 18px 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: .9rem;
+}
+
+#cart {
+  margin-left: 24px;
+}
+
+/* - - - Menu - - - */
 
 #menu {
   width: 100%;
-  background-color: yellow;
   height: 50px;
+  background-color: #fff;
 }
+
+#menu-container {
+  line-height: 50px;
+  width: 600px;
+  margin: auto;
+}
+
+.menu-item {
+  text-transform: uppercase;
+  color: #3C3D41;
+  font-size: .9rem;
+  float:left;
+  padding: 0 26px;
+}
+
+
+/* - - - Marketing - - - */
 
 #marketing {
   height: 360px;
-  background-image: url(images/produce.jpg);
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/produce.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#marketing-text {
+#marketing-container {
   color: #fff;
   font-size: 3em;
+  margin: auto;
+  padding: 80px 0 50px 0;
+  text-align: center;
+  max-width: 768px;
+  font-weight: 400;
+}
+
+#grocery-search {
+  max-width: 768px;
+  text-align: center;
+  margin: auto;
 }
 
 #marketing-form input[type=text] {
-  width: 200px;
-  padding: .5rem;
+  width: 240px;
+  padding: .85rem;
   margin: .1rem;
   box-sizing: border-box;
   border: 0;
@@ -65,7 +136,7 @@ body {
 
 #marketing-form input[type=submit] {
   width: 105px;
-  padding: .5rem;
+  padding: .85rem;
   margin: .1rem;
   box-sizing: border-box;
   border: 0;
@@ -73,13 +144,47 @@ body {
   color: #fff;
   background-color: #8fd295;
   text-transform: uppercase;
+}
 
+/* - - -  Bullet Points - - - */
+#bullet-points {
+  /*width: 768px;*/
+  margin: auto;
+}
+
+.bullet {
+  float: left; 
+  background-color: #ffc;
+  background-color: red;
+  display: inline-block;
+  width: 220px;
+}
+
+.bullet-symbol {
+  float: left;
+  padding: 15px;
+  height: 100px;
+}
+
+.bullet-text-header {
+  width: 220px;
+  background-color: blue;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #3C3D41;
+  font-size: .9rem;
+  padding: 10px;
+}
+
+.bullet-text-subtext {
+  color: #9B9B9B;
+  font-size: .8rem;
 }
 
 
-
-#bullet-points {
-  height: 115px;
+/* - - -  Products Points - - - */
+#products {
+  clear: both;
 }
 
 #products-text {
