@@ -15,6 +15,11 @@ a {
   text-decoration: none;
 }
 
+.space {
+  clear: both;
+  margin: 10px;
+}
+
 
 /* get rid of this? */
 .center-text {
@@ -71,6 +76,7 @@ a {
   text-transform: uppercase;
   display: inline-block;
   font-size: .9rem;
+  cursor: pointer;
 }
 
 #cart {
@@ -144,6 +150,7 @@ a {
   color: #fff;
   background-color: #8fd295;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 /* - - -  Bullet Points - - - */
@@ -250,6 +257,7 @@ a {
   border: 0;
   width: 50px;
   height: 18px;
+  cursor: pointer;
 }
 
 #products-all {
@@ -268,6 +276,7 @@ a {
   background-color: #8fd295;
   letter-spacing: 1.6px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 
@@ -276,7 +285,7 @@ a {
 #testimonial {
   width: 768px;
   margin: auto;
-  padding: 0 0 35px 0;
+  padding: 0 0 20px 0;
   line-height: 150%;
   text-align: center;
   font-size: 1.6rem;
@@ -304,10 +313,113 @@ a {
   color: #9B9B9B;
 }
 
+/* - - - Coupon - - - */
+
 #coupon {
-  clear: both;
+  background-color: #f6b728;
+  width: 700px;
+  margin: auto;
+  height: 240px;
+  border-radius: 20px;
 }
 
+#coupon-border {
+  position: relative;
+  height: 230px;
+  top: -10px;
+  left: -10px;
+  margin: auto;
+  border-radius: 20px;
+  border-width:5px;  
+  border-style:dashed;
+}
+
+#coupon-header {
+  text-align: center;
+  position: relative;
+  left: 10px;
+  top: 40px;
+  color: #fff;
+  font-size: 2rem;
+}
+
+#coupon-details {
+  text-align: center;
+  position: relative;
+  color: #4A4A4A;
+  left: 0px;
+  top: 60px;
+}
+
+#coupon-promo {
+  text-align: center;
+  position: relative;
+  left: 10px;
+  top: 90px;
+  color: #4A4A4A;
+  background-color: #fff;
+  padding: 16px;
+  width: 240px;
+  margin: auto;
+  border-radius: 8px;
+}
+
+/* - - - Recipes - - - */
+
+#recipes-header {
+  text-align: center;
+  font-size: 2rem;
+  color: #4A4A4A;
+  padding: 20px;
+}
+
+#recipes-tagline {
+  text-align: center;
+  color: #4A4A4A;
+  padding: 20px;
+}
+
+#recipes-all {
+  text-align: center;
+  margin: auto;
+}
+
+#recipes-all-button {
+  padding: 14px 20px;
+  margin: 22px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #8fd295;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.custom-order-container {
+  max-width: 768px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-order {
+  background-color: #fff;
+  width: 231px;
+  height: 260px;
+  margin: 0 0 30px;
+  text-align: center;
+
+}
+
+.custom-order-food {
+  height: 36px;
+  padding: 12px 0;
+}
+
+
+/* - - - Footer - - - */
 #footer {
   clear: both;
   width: 100%;
@@ -318,7 +430,7 @@ a {
 #footer-container {
   line-height: 50px;
   width: 700px;
-  margin: auto;
+  margin: 40px auto;
 }
 
 .footer-item {
@@ -332,7 +444,6 @@ a {
 #footer-subscribe {
   width: 422px;
   margin: auto;
-  padding: 25px 0;
 }
 
 #newsletter {
@@ -343,7 +454,7 @@ a {
 
 #email-input input[type=text] {
   width: 240px;
-  padding: 10px;
+  padding: 12px;
   margin: 4px;
   box-sizing: border-box;
   border: 0;
@@ -358,7 +469,17 @@ a {
   border: 0;
   padding: 8px;
   margin: 4px;
+  cursor: pointer;
 }
 
+#social-container {
+  width: 130px;
+  /*background-color: blue;*/
+  margin: 36px auto;
+}
+
+.social {
+  padding: 20px 10px;
+}
 
 
