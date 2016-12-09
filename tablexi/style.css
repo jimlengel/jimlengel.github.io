@@ -9,44 +9,28 @@ body {
   padding: 0em;
 }
 
-
 .center-text {
   text-align: center;
 }
 
 .center-container {
   margin: auto;
-  max-width: 768px;
+  /*max-width: 768px;*/
+  width: 98%;
 }
 
 #banner {
   background-color: #6e4961;
-  color: #fff;
   height: 90px;
 }
 
-#logo {
-  color: #fff;
+#logo-container {
   float: left;
-  font-size: 2em;
-  line-height: 90px;
-}
-
-.bold {
-  font-weight: 700;
+  margin-top: 16px;
 }
 
 #navcontainer {
   float: right;
-  line-height: 90px;
-
-}
-
-#navcontainer ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-align: center;
 }
 
 #navcontainer ul li { 
@@ -54,18 +38,34 @@ body {
 }
 
 #navcontainer ul li a {
+  font-size: .9rem;
   text-decoration: none;
   text-transform: uppercase;
-  padding: .2em 1em;
+  padding: 0 20px;
   color: #fff;
 }
 
-/*#navcontainer ul li a:hover {
+#navcontainer .nav-text {
+  padding-right: 10px;
 }
-*/
 
+.navbutton {
+  background-color: #ffc306;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  padding: 12px 28px;
+  margin: 18px 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: .9rem;
+}
 
-
+#cart {
+  margin-left: 24px;
+}
 
 #menu {
   width: 100%;
