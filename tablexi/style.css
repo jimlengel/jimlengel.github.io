@@ -1,5 +1,7 @@
 /* table xi */
 
+/* - - - Global - - - */
+
 body {
   /*font-family: 'Cherry Swash', cursive;*/
   font-family: 'Montserrat', sans-serif;
@@ -9,19 +11,28 @@ body {
   padding: 0em;
 }
 
+a {
+  text-decoration: none;
+}
+
+
+/* get rid of this? */
 .center-text {
   text-align: center;
 }
 
-.center-container {
-  margin: auto;
-  /*max-width: 768px;*/
-  width: 98%;
-}
+
+/* - - - Banner - - - */
 
 #banner {
   background-color: #6e4961;
   height: 90px;
+}
+
+#banner-container {
+  margin: auto;
+  /*max-width: 768px;*/
+  width: 98%;
 }
 
 #logo-container {
@@ -39,7 +50,6 @@ body {
 
 #navcontainer ul li a {
   font-size: .9rem;
-  text-decoration: none;
   text-transform: uppercase;
   padding: 0 20px;
   color: #fff;
@@ -67,45 +77,57 @@ body {
   margin-left: 24px;
 }
 
+/* - - - Menu - - - */
+
 #menu {
   width: 100%;
   height: 50px;
+  background-color: #fff;
 }
 
-#menu-list {
-  margin: auto;
-  max-width: 768px;
+#menu-container {
   line-height: 50px;
+  width: 600px;
+  margin: auto;
 }
 
 .menu-item {
-  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   color: #3C3D41;
-  font-size: .95rem;
-  float:left; 
-  width:25%;
+  font-size: .9rem;
+  float:left;
+  padding: 0 26px;
 }
+
+
+/* - - - Marketing - - - */
 
 #marketing {
   height: 360px;
-    /*max-width: 768px;*/
-  margin: auto;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/produce.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#marketing-text {
+#marketing-container {
   color: #fff;
   font-size: 3em;
   margin: auto;
+  padding: 80px 0 50px 0;
+  text-align: center;
   max-width: 768px;
+  font-weight: 400;
+}
+
+#grocery-search {
+  max-width: 768px;
+  text-align: center;
+  margin: auto;
 }
 
 #marketing-form input[type=text] {
-  width: 200px;
-  padding: .5rem;
+  width: 240px;
+  padding: .85rem;
   margin: .1rem;
   box-sizing: border-box;
   border: 0;
@@ -114,7 +136,7 @@ body {
 
 #marketing-form input[type=submit] {
   width: 105px;
-  padding: .5rem;
+  padding: .85rem;
   margin: .1rem;
   box-sizing: border-box;
   border: 0;
@@ -122,19 +144,47 @@ body {
   color: #fff;
   background-color: #8fd295;
   text-transform: uppercase;
-
 }
 
+/* - - -  Bullet Points - - - */
 #bullet-points {
-  width: 90%;
-  max-width: 768px;
-  height: 115px;
+  /*width: 768px;*/
   margin: auto;
 }
 
 .bullet {
-  float:left; 
-  width:33%;
+  float: left; 
+  background-color: #ffc;
+  background-color: red;
+  display: inline-block;
+  width: 220px;
+}
+
+.bullet-symbol {
+  float: left;
+  padding: 15px;
+  height: 100px;
+}
+
+.bullet-text-header {
+  width: 220px;
+  background-color: blue;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #3C3D41;
+  font-size: .9rem;
+  padding: 10px;
+}
+
+.bullet-text-subtext {
+  color: #9B9B9B;
+  font-size: .8rem;
+}
+
+
+/* - - -  Products Points - - - */
+#products {
+  clear: both;
 }
 
 #products-text {
