@@ -6,7 +6,7 @@ body {
   /*font-family: 'Cherry Swash', cursive;*/
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  background-color: #f1f1f1;
+  background-color: #fff;
   margin: 0em;
   padding: 0em;
 }
@@ -103,7 +103,7 @@ a {
 /* - - - Marketing - - - */
 
 #marketing {
-  height: 360px;
+  height: 400px;
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/produce.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -111,9 +111,9 @@ a {
 
 #marketing-container {
   color: #fff;
-  font-size: 3em;
+  font-size: 3.5em;
   margin: auto;
-  padding: 80px 0 50px 0;
+  padding: 100px 0 50px 0;
   text-align: center;
   max-width: 768px;
   font-weight: 400;
@@ -147,17 +147,16 @@ a {
 }
 
 /* - - -  Bullet Points - - - */
+
 #bullet-points {
-  /*width: 768px;*/
+  width: 768px;
   margin: auto;
 }
 
 .bullet {
-  float: left; 
-  background-color: #ffc;
-  background-color: red;
-  display: inline-block;
-  width: 220px;
+  float: left;
+  margin: 30px 0;
+  width: 256px;
 }
 
 .bullet-symbol {
@@ -168,7 +167,6 @@ a {
 
 .bullet-text-header {
   width: 220px;
-  background-color: blue;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: #3C3D41;
@@ -177,26 +175,190 @@ a {
 }
 
 .bullet-text-subtext {
+  width: 220px;
   color: #9B9B9B;
   font-size: .8rem;
 }
 
 
 /* - - -  Products Points - - - */
+
 #products {
   clear: both;
+  background-color: #eaeaea;
 }
 
 #products-text {
   color: #3C3D41;
   text-transform: uppercase;
+  text-align: center;
+  padding: 60px 0 30px;
 }
 
+#products-main {
+  width: 768px;
+  margin: auto;
+}
+
+.product-container {
+  width: 160px;
+  background-color: #fff;
+  float: left;
+  margin: 15px;
+  padding: 0 0 20px;
+}
+
+.product-image {
+  position: relative;
+  padding: 14px;
+}
+
+.product-title {
+  text-align: center;
+  color: #4A4A4A;
+  font-size: .9rem;
+  padding: 3px;
+}
+
+.product-price {
+  text-align: center;
+  color: #4A4A4A;
+  font-size: .9rem;
+  padding: 3px;
+}
+
+.product-quantity {
+  text-align: center;
+  color: #9B9B9B;
+  font-size: .8rem;
+  padding: 3px;
+}
+
+#product-sale {
+  right: 10px;
+  top: 8px;
+  position: absolute;
+  z-index: 1;
+  text-transform: uppercase;
+  background-color: #4a4a4a;
+  color: #fff;
+  font-size: .8rem;
+  letter-spacing: 1.6px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 4px;
+  border: 0;
+  width: 50px;
+  height: 18px;
+}
+
+#products-all {
+  clear: both;
+  text-align: center;
+  margin: auto;
+}
+
+#products-all-button {
+  padding: 14px 20px;
+  margin: 22px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #8fd295;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+
+/* - - -  Testimonial Points - - - */
+
 #testimonial {
-  font-size: 1.4rem;
+  width: 768px;
+  margin: auto;
+  padding: 0 0 35px 0;
+  line-height: 150%;
+  text-align: center;
+  font-size: 1.6rem;
   color: #4A4A4A;
 }
 
-#footer {
-  height: 243px;
+#testimonial-bio {
+  margin: auto;
+  width: 300px;
 }
+
+#testimonial-image {
+  float: left;  
+  padding: 6px 12px;
+}
+
+#testimonial-name {
+  color: #3C3D41;
+  text-transform: uppercase;
+  padding: 18px 22px 4px;  
+}
+
+#testimonial-since {
+  font-size: .8em;
+  color: #9B9B9B;
+}
+
+#coupon {
+  clear: both;
+}
+
+#footer {
+  clear: both;
+  width: 100%;
+  height: 243px;
+  background-color: #fff;
+}
+
+#footer-container {
+  line-height: 50px;
+  width: 700px;
+  margin: auto;
+}
+
+.footer-item {
+  text-transform: uppercase;
+  color: #3C3D41;
+  font-size: .9rem;
+  float:left;
+  padding: 0 26px;
+}
+
+#footer-subscribe {
+  width: 422px;
+  margin: auto;
+  padding: 25px 0;
+}
+
+#newsletter {
+  text-transform: uppercase;
+  color: #3C3D41;
+  margin: 4px;
+}
+
+#email-input input[type=text] {
+  width: 240px;
+  padding: 10px;
+  margin: 4px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 6px;
+  color: #9B9B9B;
+  background-color: #eaeaea;
+}
+
+#subscribe-mail {
+  background-color: #4a4a4a;
+  border-radius: 6px;
+  border: 0;
+  padding: 8px;
+  margin: 4px;
+}
+
+
+
