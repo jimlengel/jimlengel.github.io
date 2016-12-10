@@ -36,7 +36,6 @@ a {
 
 #banner-container {
   margin: auto;
-  /*max-width: 768px;*/
   width: 98%;
 }
 
@@ -97,12 +96,25 @@ a {
   margin: auto;
 }
 
-.menu-item {
-  text-transform: uppercase;
-  color: #3C3D41;
+#menu-container ul li { 
+  display: inline; 
+}
+
+#menu-container ul li a {
   font-size: .9rem;
-  float:left;
-  padding: 0 26px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  color: #3C3D41;
+}
+
+#menu-container .nav-text {
+  padding-right: 10px;
+}
+
+#search {
+  position: absolute;
+  right: 10px;
+  top: 95px;
 }
 
 
@@ -131,6 +143,10 @@ a {
   margin: auto;
 }
 
+#grocery-search ul li { 
+  display: inline;
+}
+
 #marketing-form input[type=text] {
   width: 240px;
   padding: .85rem;
@@ -157,19 +173,22 @@ a {
 
 #bullet-points {
   width: 768px;
+  height: 113px;
   margin: auto;
 }
 
-.bullet {
-  float: left;
-  margin: 30px 0;
-  width: 256px;
+.bullet-li-container {
+  padding-top: 18px;
+  display: inline-block;
 }
 
 .bullet-symbol {
   float: left;
   padding: 15px;
-  height: 100px;
+  height: 55px;
+}
+
+.bullet-text-container {
 }
 
 .bullet-text-header {
@@ -186,7 +205,6 @@ a {
   color: #9B9B9B;
   font-size: .8rem;
 }
-
 
 /* - - -  Products Points - - - */
 
@@ -423,27 +441,30 @@ a {
 #footer {
   clear: both;
   width: 100%;
-  height: 243px;
   background-color: #fff;
 }
 
 #footer-container {
   line-height: 50px;
-  width: 700px;
-  margin: 40px auto;
 }
 
-.footer-item {
+#footer-container ul {
+  text-align: center;
+}
+
+#footer-container ul li {
+  text-align: center;
+  padding: 0 18px;
+  display: inline;
   text-transform: uppercase;
   color: #3C3D41;
   font-size: .9rem;
-  float:left;
-  padding: 0 26px;
+
 }
 
 #footer-subscribe {
-  width: 422px;
-  margin: auto;
+  text-align: center;
+  width: 100%;
 }
 
 #newsletter {
@@ -474,12 +495,117 @@ a {
 
 #social-container {
   width: 130px;
-  /*background-color: blue;*/
   margin: 36px auto;
 }
 
 .social {
   padding: 20px 10px;
 }
+
+/* - - - */
+@media screen and (max-width: 760px) {
+  body {
+      background-color: lightgreen;
+  }
+  
+  #banner {
+    height: 160px;
+  }  
+
+  #menu-container ul li { 
+    display: block; 
+  }
+
+  #menu {
+    height: 200px;
+  }
+
+  #marketing-container {
+    padding: 20px 0 50px 0;
+  }
+
+  #grocery-search ul li { 
+    display: block;
+  }
+
+  #bullet-points {
+    width: 100%;
+    margin: auto;
+  }
+
+  .bullet-li-container {
+    padding-top: 18px;
+    display: block;
+  }
+
+  #products-main {
+    width: 100%;
+    margin: auto;
+  }
+  .product-container {
+    margin: 15px auto;
+    float: none;
+  }
+
+  #testimonial {
+    width: 90%;
+    font-size: 1.4rem;
+  }
+
+  #coupon {
+    width: 90%;
+    height: 240px;
+  }
+
+  #coupon-border {  
+    height: 230px;
+  }
+
+  #coupon-header {
+    left: 8px;
+    top: 30px;
+    font-size: 1.4rem;
+  }
+
+  #coupon-promo {
+    width: 220px;
+  }
+
+  #footer-container ul li {
+    display: block;
+  }
+
+  #footer-subscribe {
+    margin-top: 30px;
+    background-color: blue;
+  }
+
+  #footer-subscribe span {
+    text-align: center;
+    width: 100%;
+    margin: 6px auto;
+    float: left;
+    clear: left;
+  }
+
+  #social-container {
+    clear: both;
+    width: 130px;
+    margin: auto;
+    padding: 30px 0;
+  }
+
+  .custom-order-container {
+    max-width: 231px;
+    display: block;
+  }
+
+
+
+
+
+}
+
+
 
 
