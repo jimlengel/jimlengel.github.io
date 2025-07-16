@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Civics Flashcards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .flashcard-container {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      width: 400px;
+      text-align: center;
+    }
+
+    .question {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .answer {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 1rem;
+      display: none;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button#reveal {
+      background-color: #007bff;
+      color: white;
+    }
+
+    button#next {
+      background-color: #28a745;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="flashcard-container">
+    <div class="question" id="question"></div>
+    <div class="answer" id="answer"></div>
+    <div class="buttons">
+      <button id="reveal">REVEAL</button>
+      <button id="next">NEXT</button>
+    </div>
+  </div>
+
+  <script>
+    const flashcards = [
+      { q: "What is the supreme law of the land?", a: "The Constitution" },
+      { q: "What does the Constitution do?", a: "Sets up the government, defines the government, protects basic rights of Americans" },
+      { q: "The idea of self-government is in the first three words of the Constitution. What are these words?", a: "We the People" },
+      { q: "What is an amendment?", a: "A change or addition to the Constitution" },
+      { q: "What do we call the first ten amendments to the Constitution?", a: "The Bill of Rights" },
+      { q: "What is one right or freedom from the First Amendment?", a: "Speech, religion, assembly, press, petition the government" },
+      { q: "How many amendments does the Constitution have?", a: "27" },
+      { q: "What did the Declaration of Independence do?", a: "Announced our independence from Great Britain" },
+      { q: "What are two rights in the Declaration of Independence?", a: "Life, liberty, pursuit of happiness" },
+      { q: "What is freedom of religion?", a: "You can practice any religion, or not practice a religion" }
+      // You can paste all 100 Q&As here
+    ];
+
+    let current = 0;
+
+    const questionDiv = document.getElementById("question");
+    const answerDiv = document.getElementById("answer");
+    const revealBtn = document.getElementById("reveal");
+    const nextBtn = document.getElementById("next");
+
+    function loadFlashcard() {
+      const card = flashcards[current];
+      questionDiv.textContent = card.q;
+      answerDiv.textContent = card.a;
+      answerDiv.style.display = "none";
+    }
+
+    revealBtn.onclick = () => {
+      answerDiv.style.display = "block";
+    };
+
+    nextBtn.onclick = () => {
+      current = (current + 1) % flashcards.length;
+      loadFlashcard();
+    };
+
+    // Initial load
+    loadFlashcard();
+  </script>
+</body>
+</html>
